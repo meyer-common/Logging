@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Meyer.Common.Logging
 {
-    public class IdmCompactJsonFormatter : ITextFormatter
+    public class LogEntryJsonFormatter : ITextFormatter
     {
         public void Format(LogEvent logEvent, TextWriter output)
         {
