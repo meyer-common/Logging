@@ -4,16 +4,20 @@ namespace Meyer.Common.Logging
 {
     public class LogEntry
     {
-        public DateTimeOffset TimeStamp { get; set; }
+        public DateTimeOffset TimeStamp { get; internal set; }
 
-        public string Level { get; set; }
+        public string Level { get; internal set; }
 
-        public string Class { get; set; }
+        public string Application { get; internal set; }
 
-        public string Namespace { get; set; }
+        public Version Version { get; internal set; }
 
-        public string Message { get; set; }
+        public string Class { get; internal set; }
 
-        public string StackTrace { get; set; }
+        public string Namespace { get; internal set; }
+
+        public string Message { get; internal set; }
+
+        public string StackTrace { get; internal set; }
     }
 }
